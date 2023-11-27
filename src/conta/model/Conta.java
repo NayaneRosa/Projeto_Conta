@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 
 	private int numero;
 	private int agencia;
@@ -78,9 +78,11 @@ public class Conta {
 			String tipo = "";
 			
 			switch (this.tipo) {
+			
 			case 1:
 				tipo = "Conta Corrente";
 				break;
+			
 			case 2:
 				tipo = "Conta Poupança";
 				break;
